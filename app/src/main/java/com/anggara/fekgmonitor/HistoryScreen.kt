@@ -27,8 +27,8 @@ fun HistoryScreen(
                     },
                     navigationIcon = {
                         IconButton(onClick = {
-                            navController.navigate(route = FekgScreen.Home.route){
-                                popUpTo(FekgScreen.Home.route){
+                            navController.navigate(route = Screen.Home.route){
+                                popUpTo(Screen.Home.route){
                                     inclusive = true
                                 }
                             }

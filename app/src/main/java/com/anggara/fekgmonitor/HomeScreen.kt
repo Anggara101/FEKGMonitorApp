@@ -16,8 +16,7 @@ import com.anggara.fekgmonitor.ui.theme.FEKGMonitorTheme
 
 @Composable
 fun HomeScreen(
-    navController: NavController
-    ){
+    navController: NavController){
     MaterialTheme{
         Scaffold(
             topBar = {
@@ -26,13 +25,13 @@ fun HomeScreen(
                         Text(text = "FEKG Monitor")
                     },
                     navigationIcon = {
-                        IconButton(onClick = {/* doSomething() */ }) {
+                        IconButton(onClick = {  }) {
                             Icon(Icons.Default.Menu, contentDescription = null)
                         }
                     },
                     actions = {
                         IconButton(onClick = {
-                            navController.navigate(route = FekgScreen.History.route)
+                            navController.navigate(route = Screen.History.route)
                         }) {
                             Icon(Icons.Default.History, contentDescription = null)
                         }
@@ -43,7 +42,6 @@ fun HomeScreen(
             HomeBodyContent(Modifier.padding(innerPadding))
         }
     }
-//    Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background) {
 }
 
 @Composable
@@ -98,9 +96,9 @@ fun GraphCard(){
                 )
             }
         }
-
     }
 }
+
 
 @Preview(showBackground = true)
 @Composable

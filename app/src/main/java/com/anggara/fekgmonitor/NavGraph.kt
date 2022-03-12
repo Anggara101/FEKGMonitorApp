@@ -9,15 +9,15 @@ import androidx.navigation.compose.composable
 fun SetupNavGraph(navController: NavHostController) {
     NavHost(
         navController = navController,
-        startDestination = FekgScreen.Home.route
+        startDestination = Screen.Home.route
         ){
         composable(
-            route = FekgScreen.Home.route
+            route = Screen.Home.route
         ){
             HomeScreen(navController = navController)
         }
         composable(
-            route = FekgScreen.History.route
+            route = Screen.History.route
         ){
             HistoryScreen(navController = navController)
         }
