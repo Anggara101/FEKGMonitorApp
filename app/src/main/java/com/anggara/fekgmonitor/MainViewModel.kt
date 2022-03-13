@@ -24,7 +24,7 @@ class MainViewModel : ViewModel() {
             Log.i("Bluetooth", "Bluetooth is enabled")
             _homeSubTitle.value = "Bluetooth is enabled"
 
-            val pairedDevices: Set<BluetoothDevice> = bluetoothAdapter.bondedDevices()
+            val pairedDevices: Set<BluetoothDevice> = bluetoothAdapter.bondedDevices
             pairedDevices?.forEach { device ->
                 val deviceName = device.name
                 val deviceHardwareAddress = device.address // MAC address
